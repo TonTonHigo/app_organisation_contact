@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>app_organisation_contacts</title>
     <!-- botstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- mon css -->
@@ -12,8 +12,48 @@
 </head>
 <body>
 
+    <!-- header code pen -->
     <header>
-        
+        <!--Hey! This is the original version
+            of Simple CSS Waves-->
+
+        <div class="header">
+
+        <!--Content before waves-->
+        <div class="inner-header flex">
+        <!--Just the logo.. Don't mind this-->
+        <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
+        <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
+        </svg>
+        <h1>TABLEAU DES CONTACTS</h1>
+        </div>
+
+        <!--Waves Container-->
+        <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+        </div>
+        <!--Waves end-->
+
+        </div>
+        <!--Header ends-->
+
+        <!--Content starts-->
+        <div class="content flex">
+        <p>Hugo | DAIN </p>
+        </div>
+        <!--Content ends-->
     </header>
 
 
@@ -28,7 +68,7 @@
                     <th>Age</th>
                     <th>Action</th>
                     <th>
-                        <button type="button" class="btn colgreen" data-bs-toggle="modal" data-bs-target="#insert">
+                        <button type="button" class="btn colgreen button-3d" data-bs-toggle="modal" data-bs-target="#insert">
                         INSERER
                         </button>
                     </th>
@@ -52,10 +92,10 @@
                         <td>' . $ligne['age'] . '</td>
                         <td>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn colorange" data-bs-toggle="modal" data-bs-target="#update' . $ligne['id_contacts'] . '">
+                            <button type="button" class="btn colorange button-3d" data-bs-toggle="modal" data-bs-target="#update' . $ligne['id_contacts'] . '">
                                 MAJ
                             </button>
-                            <button type="button" class="btn colred" data-bs-toggle="modal" data-bs-target="#delete' . $ligne['id_contacts'] . '">
+                            <button type="button" class="btn colred button-3d" data-bs-toggle="modal" data-bs-target="#delete' . $ligne['id_contacts'] . '">
                                 SUPPR
                             </button>
                         </td>
@@ -67,7 +107,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="exampleModalLabel">Mise à jour d`un contact</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close button-3d" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <p>Êtes-vous sûr de vouloir mettre à jour ' . $ligne['nom'] . ' ' . $ligne['prenom'] . ' ' . $ligne['email'] . ' âgé de ' . $ligne['age'] . ' ans ?</p>
@@ -88,8 +128,8 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                                    <button type="submit" class="btn colorange" form="formupdate' . $ligne['id_contacts'] . '">Mettre à jour</button>
+                                    <button type="button" class="btn btn-secondary button-3d" data-bs-dismiss="modal">Fermer</button>
+                                    <button type="submit" class="btn colorange button-3d" form="formupdate' . $ligne['id_contacts'] . '">Mettre à jour</button>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +141,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="exampleModalLabel">Supprimer un contact</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close button-3d" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="login">
@@ -114,8 +154,8 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                                    <button type="submit" class="btn colred" form="formdelete' . $ligne['id_contacts'] . '">Supprimer</button>
+                                    <button type="button" class="btn btn-secondary button-3d" data-bs-dismiss="modal">Fermer</button>
+                                    <button type="submit" class="btn colred button-3d" form="formdelete' . $ligne['id_contacts'] . '">Supprimer</button>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +173,7 @@
                         <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="modal-title fs-5" id="exampleModalLabel">Ajout d'un nouveau contact</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close button-3d" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="login">
@@ -157,8 +197,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                            <button type="submit" class="btn colgreen" form="forminsert">Insérer</button>
+                            <button type="button" class="btn btn-secondary button-3d" data-bs-dismiss="modal">Fermer</button>
+                            <button type="submit" class="btn colgreen button-3d" form="forminsert">Insérer</button>
                         </div>
                         </div>
                     </div>
@@ -166,7 +206,26 @@
     </main>
 
 
-    <footer></footer>
+    <!-- footer code pen -->
+    <footer>
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+        </div>    
+
+    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
