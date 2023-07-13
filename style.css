@@ -133,3 +133,15 @@ tbody:hover tr:hover td {
    color: white;
    transition: 1s;
 }
+.colgreen:hover{
+   background-color: transparent; 
+   border: 1px solid forestgreen;
+}
+.colorange:hover{
+   background-color: transparent;   
+   border: 1px solid goldenrod;
+}
+.colred:hover{
+   background-color: transparent; 
+   border: 1px solid crimson;
+}

@@ -18,7 +18,7 @@ class ma_connexion{
 
         try {
 
-            $dsn = "mysql:host=" . $this-> host . "; dbname=" . $this-> nom_bd . "; charset:=utf8mb4_0900_ai_ci";
+            $dsn = "mysql:host=" . $this-> host . "; dbname=" . $this-> nom_bd . "; charset:=utf8mb4";
             $this-> connexionPDO = new PDO($dsn, $this-> user, $this-> password);
             $this-> connexionPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
