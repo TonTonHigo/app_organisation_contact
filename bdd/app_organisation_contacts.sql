@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 13 juil. 2023 à 10:49
+-- Généré le : lun. 31 juil. 2023 à 09:48
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.1.13
 
@@ -20,8 +20,9 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `app_organisation_contacts`
 --
-CREATE DATABASE app_organisation;
-USE app_organisation;
+CREATE DATABASE app_contacts;
+USE app_contacts;
+
 -- --------------------------------------------------------
 
 --
@@ -36,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `contacts` (
   `email` varchar(50) NOT NULL,
   `age` int NOT NULL,
   PRIMARY KEY (`id_contacts`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `contacts`
@@ -46,7 +47,7 @@ INSERT INTO `contacts` (`id_contacts`, `nom`, `prenom`, `email`, `age`) VALUES
 (11, 'Three Days Grace', 'World so cold', 'tw@gmail.com', 25),
 (10, 'Rammstein', 'Zeit', 'rz@gmail.com', 30),
 (3, 'tang', 'tang', 'tang@gmail.com', 2),
-(9, 'civet', 'zourite', 'civet@gmail.com', 2),
+(13, 'thon', 'banane', 'tb@gmail.com', 2),
 (12, 'TRIVIUM', 'until the world goes', 'tu@gmail.com', 16);
 COMMIT;
 
