@@ -1,10 +1,10 @@
 Fonctionnalités implémentées :
-- Insertion de contacts
-- Mise à jour de contacts
-- Suppression de contacts
+- Insertion de contact
+- Mise à jour de contact
+- Suppression de contact
 
 Les choix de conception :
-- Pour la stylisation c'est code de CodePen modifier plus ou moins selon mais besoin
+- Pour la stylisation c'est code de CodePen modifier plus ou moins selon mes besoin
 - Un tableau plus simple pour la compréhension
   
 Les instructions pour exécuter l'application :
