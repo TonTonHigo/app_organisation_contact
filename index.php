@@ -84,7 +84,6 @@
         <?php
 
         
-            $connexion = new ma_connexion("localhost", "app_organisation_contacts", "root", "");
             $afficher = $connexion->select("*", "contacts");
 
             foreach ($afficher as $ligne) {

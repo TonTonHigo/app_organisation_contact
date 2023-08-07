@@ -122,7 +122,7 @@ class ma_connexion{
 
 
 
-// $connexion = new ma_connexion("localhost", "app_organisation_contacts", "root", "");
+$connexion = new ma_connexion("localhost", "app_contacts", "root", "");
 // $test -> update_salle("2023-12-23", "2023-11-23", "1");
 // $users = $test -> select("*","users");
 
